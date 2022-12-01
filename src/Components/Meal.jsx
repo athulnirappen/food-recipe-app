@@ -10,7 +10,7 @@ const Meal = () => {
   const[search,setSearch]=useState("");
   useEffect(()=>{
     fetch(url).then(res=>res.json()).then(data=>{
-     console.log(data.meals);
+     
       setItem(data.meals)
       setshow(true);
     })
